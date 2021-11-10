@@ -53,6 +53,6 @@ int transMat(){
 int main(){
 	initMats();
 	mulMat();
-	Saxpy(); 
+	Saxpy();  
 }
 			
