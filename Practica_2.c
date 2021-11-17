@@ -68,7 +68,7 @@ int sumElement(int tempM1M2[N][N], int tempC[N]){
 		tempC[i]=suma;
 	}
 }
-//Debuelve
+//Devuelve si ha podido hacer la operacion (True=1, False=0)
 int PermutaF(int Matriu[N][N],int x, int y) {
 	if (x>=N||y>=N) {
 		return 0;
@@ -87,6 +87,7 @@ int PermutaF(int Matriu[N][N],int x, int y) {
 		return 1;
 	} 
 }
+//Programa principal
 int main(){
 	initMats();
 	int tempM1M2[N][N];
