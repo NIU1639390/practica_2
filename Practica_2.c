@@ -33,9 +33,8 @@ int mulMat(int Mat1[N][N], int Mat2[N][N], int tempM1M2[N][N]){
 }
 //SAXPY con los vectores
 int Saxpy(int Vector1[N], int Vector2[N], int b, int tempV1V2[N]){
-	tempV1V2==Vect2;
 	for(int i=0;i<N;i++){
-		tempV1V2[i] += b * Vect1[i];
+		tempV1V2[i] += (b * Vect1[i])+Vect2[i];
 	}
 }
 //Matiz transpuesta
@@ -69,20 +68,20 @@ int sumElement(int tempM1M2[N][N], int tempC[N]){
 	}
 }
 //Devuelve si ha podido hacer la operacion (True=1, False=0)
-int PermutaF(int Matriu[N][N],int x, int y) {
+int PermutaF(int Mat[N][N],int x, int y) {
 	if (x>=N||y>=N) {
 		return 0;
 	}
 	else {
 		int tempV[N];
 		for (int i=0; i<N; i++) {
-			tempV[i]=Matriu[x][i];
+			tempV[i]=Mat[x][i];
 		}
 		for (int i=0; i<N; i++) {
-			Matriu[x][i]=Matriu[y][i];
+			Mat[x][i]=Mat[y][i];
 		}
 		for (int i=0; i<N; i++) {
-			Matriu[y][i]=tempV[i];
+			Mat[y][i]=tempV[i];
 		}
 		return 1;
 	} 
