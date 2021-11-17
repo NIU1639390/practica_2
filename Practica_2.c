@@ -74,15 +74,15 @@ int PermutaF(int Matriu[N][N],int x, int y) {
 		return 0;
 	}
 	else {
-		int VectorTemporal[N];
+		int tempV[N];
 		for (int i=0; i<N; i++) {
-			VectorTemporal[i]=Matriu[x][i];
+			tempV[i]=Matriu[x][i];
 		}
 		for (int i=0; i<N; i++) {
 			Matriu[x][i]=Matriu[y][i];
 		}
 		for (int i=0; i<N; i++) {
-			Matriu[y][i]=VectorTemporal[i];
+			Matriu[y][i]=tempV[i];
 		}
 		return 1;
 	} 
@@ -117,8 +117,7 @@ int main(){
 	int tempC [N];
 	sumElement(tempM1M2,tempC);
 	for (int i=400; i<420; i++) {
-		printf ("%d ", tempC[i]);
-	}
-	printf("\n");	
+		printf ("%d\n", tempC[i]);
+	}	
 }
 			
