@@ -107,11 +107,11 @@ int main(){
 		printf("%d\n", tempTransM1M2[i][10]);
   	}
   	printf("\n");
-	int realitzat;
-	realitzat=PermutaF(Mat1, 5, 10);
-	printf ("%d\n", realitzat);
-	realitzat=PermutaF(Mat2, 100, 512);
-	printf ("%d\n\n", realitzat);
+	int fet;
+	fet=PermutaF(Mat1, 5, 10);
+	printf ("%d\n", fet);
+	fet=PermutaF(Mat2, 100, 512);
+	printf ("%d\n\n", fet);
 	printf("%d\n\n",sumDiagonal(tempTransM1M2));
 	int tempC [N];
 	sumElement(tempM1M2,tempC);
