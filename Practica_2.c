@@ -57,7 +57,7 @@ int sumDiagonal(int tempTransM1M2[N][N]){
 		 }
 	}	
 }
-//
+//Suma los elementos de cada fila y lo coloca en un vector
 int sumElement(int tempM1M2[N][N], int tempC[N]){
 	int suma;
 	for(int i=0;i<N;i++){
@@ -68,7 +68,7 @@ int sumElement(int tempM1M2[N][N], int tempC[N]){
 		tempC[i]=suma;
 	}
 }
-//
+//Debuelve
 int PermutaF(int Matriu[N][N],int x, int y) {
 	if (x>=N||y>=N) {
 		return 0;
@@ -87,7 +87,7 @@ int PermutaF(int Matriu[N][N],int x, int y) {
 		return 1;
 	} 
 }
-int main() {
+int main(){
 	initMats();
 	int tempM1M2[N][N];
 	mulMat(Mat1, Mat2, tempM1M2);
